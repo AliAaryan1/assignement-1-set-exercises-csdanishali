@@ -1,0 +1,46 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header styles */
+h1 {
+    color: #d2691e;
+    text-align: center;
+    margin-top: 20px;
+}
+
+h2 {
+    color: #8b4513;
+    margin-top: 20px;
+}
+
+/* Paragraph styles */
+p {
+    margin: 20px;
+    font-size: 1.1em;
+}
+
+/* List styles */
+ul, ol {
+    margin: 20px;
+    padding-left: 40px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* Ingredient and method sections */
+ul {
+    list-style-type: square;
+}
+
+ol {
+    list-style-type: decimal;
+}

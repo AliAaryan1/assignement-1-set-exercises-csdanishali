@@ -5,85 +5,92 @@
     <title>My Favorite Recipe</title>
 </head>
 <body>
+
+<div class="content-wrapper">
+ <div class="recipe-box">
+
     <!-- Recipe name -->
     <h1>Chocolate Chip Cookies</h1>
 
     <!-- Description of the recipe -->
     <p>This is a simple and delicious recipe for classic chocolate chip cookies that are crispy on the edges and chewy in the middle.</p>
 
-<hr>
+    <hr>
 
     <!-- Cupcake Ingredients Table -->
     <h2>Cupcake Ingredients</h2>
-    <div style="display: flex; align-items: flex-start;">
-        <table border="1" style="margin-right: 20px;">
+    <table border="1" style="margin-right: 20px;"> 
         
-                <tr bgcolor="#FF5733">
-                    <th>Ingredient</th>
-                    <th>Quantity</th>
-                    <th>Check</th>
-                </tr>
+        <tr> 
+            <th>Ingredient</th>
+            <th>Quantity</th>
+            <th>Check</th>
+        </tr>
+            <!-- in this version i have used css file, reast code is same -->
+            <!-- the ingredients in this table are for cookies and have been copied from the internet -->
+            <tr>  
+            <td>Unsalted Butter, softened</td>
+            <td>1 cup</td>
+            <td><input type="checkbox"></td>
+        </tr>
+        <tr>  <!--i have no longer used bgcolor code to give diff colour -->
+            <td>White Sugar</td>
+            <td>1 cup</td>
+            <td><input type="checkbox"></td>
+        </tr>
+        <tr>
+            <td>Packed Brown Sugar</td>
+            <td>1 cup</td>
+            <td><input type="checkbox"></td>
+        </tr>
+        <tr>
+            <td>Eggs</td>
+            <td>2</td>
+            <td><input type="checkbox"></td>
+        </tr>
+        <tr>
+            <td>Vanilla Extract</td>
+            <td>2 teaspoons</td>
+            <td><input type="checkbox"></td>
+        </tr>
+        <tr>
+            <td>All-purpose Flour</td>
+            <td>3 cups</td>
+            <td><input type="checkbox"></td>
+        </tr>
+        <tr>
+            <td>Baking Soda</td>
+            <td>1 teaspoon</td>
+            <td><input type="checkbox"></td>
+        </tr>
+        <tr>
+            <td>Hot Water</td>
+            <td>2 teaspoons</td>
+            <td><input type="checkbox"></td>
+        </tr>
+        <tr>
+            <td>Salt</td>
+            <td>1/2 teaspoon</td>
+            <td><input type="checkbox"></td>
+        </tr>
+        <tr>
+            <td>Semisweet Chocolate Chips</td>
+            <td>2 cups</td>
+            <td><input type="checkbox"></td>
+        </tr>
+        <tr>
+            <td>Chopped Walnuts (optional)</td>
+            <td>1 cup</td>
+            <td><input type="checkbox"></td>
+        </tr>
+
+</table>
             
-                <tr bgcolor="orange">
-                    <td>Unsalted Butter, softened</td>
-                    <td>1 cup</td>
-                    <td><input type="checkbox"></td>
-                </tr>
-                <tr bgcolor="orange">
-                    <td>White Sugar</td>
-                    <td>1 cup</td>
-                    <td><input type="checkbox"></td>
-                </tr>
-                <tr bgcolor="orange">
-                    <td>Packed Brown Sugar</td>
-                    <td>1 cup</td>
-                    <td><input type="checkbox"></td>
-                </tr>
-                <tr bgcolor="orange">
-                    <td>Eggs</td>
-                    <td>2</td>
-                    <td><input type="checkbox"></td>
-                </tr>
-                <tr bgcolor="orange">
-                    <td>Vanilla Extract</td>
-                    <td>2 teaspoons</td>
-                    <td><input type="checkbox"></td>
-                </tr>
-                <tr bgcolor="orange">
-                    <td>All-purpose Flour</td>
-                    <td>3 cups</td>
-                    <td><input type="checkbox"></td>
-                </tr>
-                <tr bgcolor="orange">
-                    <td>Baking Soda</td>
-                    <td>1 teaspoon</td>
-                    <td><input type="checkbox"></td>
-                </tr>
-                <tr bgcolor="orange">
-                    <td>Hot Water</td>
-                    <td>2 teaspoons</td>
-                    <td><input type="checkbox"></td>
-                </tr>
-                <tr bgcolor="orange">
-                    <td>Salt</td>
-                    <td>1/2 teaspoon</td>
-                    <td><input type="checkbox"></td>
-                </tr>
-                <tr bgcolor="orange">
-                    <td>Semisweet Chocolate Chips</td>
-                    <td>2 cups</td>
-                    <td><input type="checkbox"></td>
-                </tr>
-                <tr bgcolor="orange">
-                    <td>Chopped Walnuts (optional)</td>
-                    <td>1 cup</td>
-                    <td><input type="checkbox"></td>
-                </tr>
-        </table>
-        <div>
-            <img src="https://sallysbakingaddiction.com/wp-content/uploads/2013/05/classic-chocolate-chip-cookies.jpg" alt="cookie image" style="max-width: 272px; margin-top: 3px;">
-        </div>
-    </div>
+        <p>Note: You can adjust the quantity of chocolate chips and nuts according to your preference.</p>
+        
+        <!-- Image of the recipe -->
+        <h2>Cookies!</h2>
+        <img src="https://images.ctfassets.net/0e6jqcgsrcye/1hV5JXjXMMAz2dGoWAVAS9/ed0a71f31f00e98ddc0b0a4172620d0a/Sea_salt_miso_cookies.JPG" alt="Chocolate Chip Cookies" width="400" height="300">
 <hr> 
     <!-- Method section -->
     <h2>Method</h2>
@@ -97,6 +104,7 @@
         <li>Drop by large spoonfuls onto ungreased pans.</li>
         <li>Bake for about 10 minutes in the preheated oven, or until edges are nicely browned.</li>
     </ol>
-
+ </div>
+</div>
 </body>
 </html>

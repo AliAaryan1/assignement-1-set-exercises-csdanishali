@@ -1,117 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML & CSS Quick Reference Guide</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="bonus style.css">
 </head>
 <body>
-    <header>
-        <h1>HTML & CSS Quick Reference Guide</h1>
+    <header class="main-header">
+        <div class="container">
+            <h1>Web Developer's Cheat Sheet</h1>
+            <p class="tagline">Essential HTML & CSS Reference</p>
+        </div>
     </header>
-    <section>
-        <h2>HTML Tags</h2>
-        <article>
-            <h3>&lt;h1&gt; to &lt;h6&gt;</h3>
-            <p>Defines HTML headings.</p>
-            <pre><code>&lt;h1&gt;This is a heading&lt;/h1&gt;</code></pre>
-        </article>
-        <article>
-            <h3>&lt;p&gt;</h3>
-            <p>Defines a paragraph.</p>
-            <pre><code>&lt;p&gt;This is a paragraph.&lt;/p&gt;</code></pre>
-        </article>
-        <article>
-            <h3>&lt;a&gt;</h3>
-            <p>Defines a hyperlink.</p>
-            <pre><code>&lt;a href="https://example.com"&gt;This is a link&lt;/a&gt;</code></pre>
-        </article>
-        <article>
-            <h3>&lt;img&gt;</h3>
-            <p>Defines an image.</p>
-            <pre><code>&lt;img src="image.jpg" alt="Description"&gt;</code></pre>
-        </article>
-        <article>
-            <h3>&lt;ul&gt; &amp; &lt;li&gt;</h3>
-            <p>Defines an unordered list and list items.</p>
-            <pre><code>&lt;ul&gt;
-    &lt;li&gt;Item 1&lt;/li&gt;
-    &lt;li&gt;Item 2&lt;/li&gt;
-&lt;/ul&gt;</code></pre>
-        </article>
-        <article>
-            <h3>&lt;ol&gt; &amp; &lt;li&gt;</h3>
-            <p>Defines an ordered list and list items.</p>
-            <pre><code>&lt;ol&gt;
-    &lt;li&gt;First item&lt;/li&gt;
-    &lt;li&gt;Second item&lt;/li&gt;
+
+    <main class="container">
+        <section class="reference-section">
+            <h2 class="section-title">HTML Elements</h2>
+            
+            <article class="card">
+                <h3>Document Structure</h3>
+                <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;  <!-- &lt; are tag which are used to represent < and >  -->
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Page Title&lt;/title&gt;
+&lt;/head&gt; <!-- so for example this will be shown as </head>-->
+&lt;body&gt;
+    &lt;!-- Content --&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+                <p class="description">Basic HTML5 document structure with essential meta tags.</p>
+            </article>
+
+            <article class="card">
+                <h3>Text Elements</h3>
+                <pre><code>&lt;h1&gt;Main Heading&lt;/h1&gt;
+&lt;h2&gt;Subheading&lt;/h2&gt;
+&lt;p&gt;Paragraph text&lt;/p&gt;
+&lt;strong&gt;Bold text&lt;/strong&gt;
+&lt;em&gt;Italic text&lt;/em&gt;</code></pre>
+                <p class="description">Common text formatting elements for content structure.</p>
+            </article>
+
+            <article class="card">
+                <h3>Lists</h3>
+                <pre><code>&lt;ul&gt;
+    &lt;li&gt;Unordered item&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+    &lt;li&gt;Ordered item&lt;/li&gt;
 &lt;/ol&gt;</code></pre>
-        </article>
-        <article>
-            <h3>&lt;div&gt;</h3>
-            <p>Defines a division or section.</p>
-            <pre><code>&lt;div&gt;This is a div&lt;/div&gt;</code></pre>
-        </article>
-        <article>
-            <h3>&lt;span&gt;</h3>
-            <p>Defines a section in a document.</p>
-            <pre><code>&lt;span&gt;This is a span&lt;/span&gt;</code></pre>
-        </article>
-        <article>
-            <h3>&lt;table&gt;, &lt;tr&gt;, &lt;td&gt;</h3>
-            <p>Defines a table, table row, and table cell.</p>
-            <pre><code>&lt;table&gt;
-    &lt;tr&gt;
-        &lt;td&gt;Cell 1&lt;/td&gt;
-        &lt;td&gt;Cell 2&lt;/td&gt;
-    &lt;/tr&gt;
-&lt;/table&gt;</code></pre>
-        </article>
-        <article>
-            <h3>&lt;form&gt;</h3>
-            <p>Defines an HTML form for user input.</p>
-            <pre><code>&lt;form&gt;
-    &lt;label for="name"&gt;Name:&lt;/label&gt;
-    &lt;input type="text" id="name" name="name"&gt;
-&lt;/form&gt;</code></pre>
-        </article>
-    </section>
-    <section>
-        <h2>CSS Properties</h2>
-        <article>
-            <h3>color</h3>
-            <p>Sets the color of text.</p>
-            <pre><code>p {
-    color: blue;
+                <p class="description">Create bulleted or numbered lists.</p>
+            </article>
+
+            <article class="card">
+                <h3>Links & Images</h3>
+                <pre><code>&lt;a href="url"&gt;Link Text&lt;/a&gt;
+&lt;img src="image.jpg" alt="Description"&gt;</code></pre>
+                <p class="description">Hyperlinks and image embedding.</p>
+            </article>
+
+            <article class="card">
+                <h3>Semantic Elements</h3>
+                <pre><code>&lt;header&gt;&lt;/header&gt;
+&lt;nav&gt;&lt;/nav&gt;
+&lt;main&gt;&lt;/main&gt;
+&lt;section&gt;&lt;/section&gt;
+&lt;article&gt;&lt;/article&gt;
+&lt;footer&gt;&lt;/footer&gt;</code></pre>
+                <p class="description">HTML5 semantic elements for better structure.</p>
+            </article>
+        </section>
+
+        <section class="reference-section">
+            <h2 class="section-title">CSS Properties</h2>
+            
+            <article class="card">
+                <h3>Text Styling</h3>
+                <pre><code>body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    text-align: center;
 }</code></pre>
-        </article>
-        <article>
-            <h3>background-color</h3>
-            <p>Sets the background color of an element.</p>
-            <pre><code>div {
-    background-color: lightgrey;
+                <p class="description">Basic text styling properties.</p>
+            </article>
+
+            <article class="card">
+                <h3>Box Model</h3>
+                <pre><code>.box {
+    width: 300px;
+    height: 200px;
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #ccc;
 }</code></pre>
-        </article>
-        <article>
-            <h3>font-size</h3>
-            <p>Sets the size of the font.</p>
-            <pre><code>h1 {
-    font-size: 2em;
+                <p class="description">Properties that control element sizing and spacing.</p>
+            </article>
+
+            <article class="card">
+                <h3>Layout</h3>
+                <pre><code>.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }</code></pre>
-        </article>
-        <article>
-            <h3>margin</h3>
-            <p>Sets the margin area on all four sides of an element.</p>
-            <pre><code>p {
-    margin: 20px;
+                <p class="description">Modern layout techniques with Flexbox.</p>
+            </article>
+
+            <article class="card">
+                <h3>Colors & Backgrounds</h3>
+                <pre><code>header {
+    background-color: #2c3e50;
+    background-image: url('pattern.png');
+    background-size: cover;
+    color: white;
 }</code></pre>
-        </article>
-        <article>
-            <h3>padding</h3>
-            <p>Sets the padding area on all four sides of an element.</p>
-            <pre><code>div {
-    padding: 10px;
-}</code></pre>
-        </article>
-        <article>
+                <p class="description">Color and background styling options.</p>
+            </article>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2023 Dev Cheat Sheet | Created with HTML & CSS</p>
+        </div>
+    </footer>
+</body>
+</html>

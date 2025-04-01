@@ -12,11 +12,14 @@ body {
     line-height: 1.6;
     color: var(--dark);
     max-width: 900px;
-    margin: 0 left;
+    margin: 0 auto; /* Fixed from '0 left' */
     padding: 0 20px;
-    background-color: var(--light);
-    background-image: url('https://i.imgur.com/JQ6QY0a.jpg'); /* Space background */
-
+    /* Background properties */
+    background-image: url('https://virtualbackgrounds.site/wp-content/uploads/2022/03/the-big-bang-theory-living-room.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative; /* Needed for overlay */
 }
 
 /* Navigation */
@@ -58,6 +61,8 @@ header {
     margin-bottom: 30px;
     border-radius: 5px;
 }
+
+
 
 h1 {
     font-size: 3rem;
@@ -160,7 +165,7 @@ footer {
     background-color: var(--secondary);
     color: white;
     border-radius: 5px;
-    font-size: 0.9rem;
+
 }
 
 /* Responsive Design */
@@ -175,9 +180,7 @@ footer {
         columns: 1;
     }
     
-    h1 {
-        font-size: 2.2rem;
-    }
+    
     
     .tagline {
         font-size: 1.1rem;
@@ -188,8 +191,3 @@ footer {
     }
 }
 
-/* Special font for code/scientific elements */
-.science {
-    font-family: 'Share Tech Mono', monospace;
-    color: var(--accent);
-}

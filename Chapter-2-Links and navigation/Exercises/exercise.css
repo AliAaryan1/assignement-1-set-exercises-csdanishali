@@ -1,12 +1,12 @@
 /* Base Styles */
 :root {
-    --primary: #FF6F00;
-    --secondary: #1A237E;
+    --primary: #ff6f00b7;
+    --secondary: #1a227ebd;
     --accent: #00BCD4;
     --light: #F5F5F5;
     --dark: #212121;
 }
-
+/* body styling*/
 body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
@@ -77,7 +77,7 @@ header {
     border-radius: 5px;
     align-items: center;
 }
-
+ 
 .character-image {
     width: 120px;
     height: 120px;

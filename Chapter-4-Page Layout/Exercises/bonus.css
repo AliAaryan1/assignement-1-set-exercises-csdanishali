@@ -1,0 +1,102 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #101010;
+  }
+  
+  /* Header */
+  header {
+    background: #e58b1d;
+    color: #e9eef3;
+    padding: 40px 0;
+    text-align: center;
+  }
+  
+  /* Navigation */
+  nav {
+    background: #dd5731;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    padding: 1%;
+  }
+  
+  nav ul li {
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    color: #000000;
+    text-decoration: none;
+    padding: 15px 0;
+    display: block;
+  }
+  
+  /* Main Container */
+  .container {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+  }
+  
+  /* Study Tasks (Left Column) */
+  .study-tasks {
+    flex: 2;
+  }
+  
+  .study-tasks h2 {
+    margin-bottom: 10px;
+  }
+  
+  .task {
+    background: #eb8080;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-left: 5px solid #ff9100;
+  }
+  
+  /* Actions Sidebar (Right Column) */
+  .actions {
+    flex: 1;
+    background: #53adc4;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .actions h2 {
+    margin-bottom: 15px;
+  }
+  
+  .actions button {
+    padding: 10px 15px;
+    background: #3d858f;
+    color: rgb(38, 31, 31);
+    border: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+    border-radius: 3px;
+  }
+  
+  .actions button:hover {
+    background: #416095;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 15px;
+    background: #698d92;
+    color: #000000;
+    margin-top: 30px;
+  }

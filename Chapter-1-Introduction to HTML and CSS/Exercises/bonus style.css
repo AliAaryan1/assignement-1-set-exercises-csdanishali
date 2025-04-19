@@ -1,12 +1,12 @@
 /* Base Styles */
 :root {
-    --primary: #1f7edcc9;
-    --secondary: #085a91cb;
+    --primary: #a61510;
+    --secondary: #000000cb;
     --accent: #e74c3c;
-    --light: #ecf0f1;
+    --light: #448798;
     --dark: #2c3e50;
-    --gray: #95a5a6;
-    --success: #2ecc71;
+    --gray: #091617;
+    --success: #8c100a;
 }
 
 * {
@@ -20,6 +20,16 @@ body {
     line-height: 1.6;
     color: var(--dark);
     background-color: #f9f9f9;
+    background-image: url('https://c4.wallpaperflare.com/wallpaper/760/687/591/line-shade-color-square-wallpaper-preview.jpg');
+    background-position: center;
+    font-size: 18px;
+    /* Add these 5 lines to center everything */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px 0;
 }
 
 .container {

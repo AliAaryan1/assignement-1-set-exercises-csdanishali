@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #b05a5a;
+
+        background-image: url('https://static.vecteezy.com/system/resources/thumbnails/024/692/084/small_2x/ai-generated-ai-generative-vintage-retro-classic-car-porsche-minimal-luxury-expensive-super-car-graphic-art-photo.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-filter: blur(5px)
+}
+
+.video-container {
+    width: 80%;
+    max-width: 800px;
+}
+
+video {
+    width: 100%;
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    border-radius: 8px;
+}

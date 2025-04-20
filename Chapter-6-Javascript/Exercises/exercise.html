@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <!-- Link to external CSS file -->
   <link rel="stylesheet" href="exercise.css">
   <title>Petrol Calculator</title>
 </head>
@@ -20,6 +21,7 @@
 
     <!-- On-screen number pad -->
     <div id="numberPad">
+      <!-- Number pad buttons -->
       <button onclick="appendNumber('7')">7</button>
       <button onclick="appendNumber('8')">8</button>
       <button onclick="appendNumber('9')">9</button>
@@ -34,12 +36,15 @@
 
       <button onclick="appendNumber('0')">0</button>
       <button onclick="appendNumber('.')">.</button>
+      <!-- Backspace button to remove last character -->
       <button onclick="backspace()">←</button>
     </div>
 
     <!-- Centered action buttons -->
     <div id="actionButtons">
+      <!-- Button to calculate total cost -->
       <button onclick="calculateTotal()">Calculate</button>
+      <!-- Button to clear all inputs -->
       <button onclick="clearInputs()">Clear</button>
     </div>
 
@@ -47,6 +52,7 @@
     <p id="totalCost">Total: $0.00</p>
   </div>
 
+  <!-- Link to external JavaScript file -->
   <script src="/Chapter-6-Javascript/Exercises/exersise.js"></script>
 </body>
 </html>

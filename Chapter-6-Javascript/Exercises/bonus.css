@@ -1,0 +1,90 @@
+/*spacing and set background and base font styling */
+body {
+    margin: 0;
+    padding: 100px 50px;
+    font-family: 'Arial', sans-serif;
+    background-color: #e65555;
+    text-align: center;
+      font-weight: bold;
+  }
+  
+  /* Main title styling */
+  .title {
+    font-size: 2.5rem;
+    margin-top: 2rem;
+    color: #444;
+  }
+  
+  /* Display for RGB color value */ 
+  .rgb-display {
+    font-size: 3.5rem;
+    margin-top: 1.5rem;
+    color: #b12424;
+    font-weight: 500;
+  }
+  
+  /* Scoreboard container styling */
+  .scoreboard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px; /* spacing between items */
+    font-size: 3rem;
+    margin-bottom: 50px;
+
+  }
+  
+  /* Container for color options */
+  .options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    margin: 50px auto; 
+}
+  
+  /* Individual color option styling (circle buttons) */
+  .option {
+    width: 100px;
+    height: 100px;
+    border-radius: 30%; /* makes it circular */
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.2s ease;
+    border: 3px solid rgb(0, 0, 0);
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  }
+  
+  /* Hover effect for color options */
+  .option:hover {
+    transform: scale(1.5);
+    box-shadow: 0 0 12px rgba(0,0,0,0.15);
+  }
+  
+  /* Feedback message styling */
+  .feedback {
+    font-size: 1.3rem;
+    margin-top: 1rem;
+    font-weight: bold;
+  }
+  
+  /* Button styling*/
+  button {
+    margin-top: 2rem;
+    padding: 0.8rem 1.8rem;
+    font-size: 1rem;
+    background-color: #ffc1cc; 
+    color: #333;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+  }
+  
+  /* Hover effect for button */
+  button:hover {
+    background-color: #ffb6c1;
+  }
+  
+  /* Utility class to hide elements when needed */
+  .hidden {
+    display: none;
+  }
